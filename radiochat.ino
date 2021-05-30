@@ -1,8 +1,8 @@
 // RADIOCHAT - DIGISPARK + FS1000A + MX-PM-5V
-// ALLOWS UNENCRYPTED 2 WAY (SIMPLEX) COMMUNICATION
-// ON ISM BAND
+// ALLOWS UNENCRYPTED 2 WAY (HALF DUPLEX) 
+// COMMUNICATION ON ISM BAND
 // DEVICE APPEARS AS CDC USB-TO-SERIAL PORT
-// IN OPERATING SYSTEM
+// IN OPERATING SYSTEM 
 // connections to be made 
 // (transmitter) FS1000A DATA PIN to PIN P2 Digispark - 2
 // (receiver)   MX-PM-5V DATA PIN to PIN P0 Digispark - 0
@@ -59,5 +59,5 @@ void loop() {
         digitalWrite(LEDPIN, LOW);                // LED OFF
       }
   
-   SerialUSB.refresh();               // keep usb alive can also use SerialUSB.refresh();
+   SerialUSB.refresh();               // keep usb alive can also use SerialUSB.delay();
 }
